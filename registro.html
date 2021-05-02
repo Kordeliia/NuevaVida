@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Vida</title>
+    <link rel="stylesheet" href="src/css/estilo.css">
+</head>
+<body>
+    <header class="cabecera init">
+        <div class="con ccabecera">
+            <div class="bar">
+                <div class="tlf-responsive">
+                    <img src="build/img/barras.svg" alt="icono menu responsive">
+                </div>
+                <div class="dcha">
+                    <img class="iconodm" src="build/img/logo.png">
+                    <nav class="nav">
+                        <a href="index.php">Inicio</a>
+                        <a href="quienessomos.html">QuienesSomos</a>
+                        <a href="adoptame.html">Adóptame</a>
+                        <a href="protectoras.html">Protectoras</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="referencias.html">Referencias</a>
+                    </nav>
+                </div>
+            </div>
+            <h1>Nueva Vida ¡te piden una segunda oportunidad!</h1>
+            <p class="logregistro"><a href="registro.html">Regístrate</a> / <a href="login.html">Loguéate</a></p>
+        </div>
+    </header>
+            <main class="con sec">
+                <h2>¡Regístrate en nuestra base de datos y crea tu nombre de usuario!</h2>
+                <form class="formulario" name="formulario" method="post" action="crearuser.php">
+            <fieldset>
+                <legend>Información usuario personal</legend>
+                <label for="nickname">Nickname:</label>
+                <input type="text" placeholder="Escriba su nickname" name="unickname" required>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Escriba su nombre" name="unombre" required>
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" placeholder="Escriba sus apellidos, si es protectora no escriba nada" name="uapellidos">
+                <br>
+                <label for="urol">Rol:</label>
+                <select name="urol" required>
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Usuario">Usuario</option>
+                    <option value="Protectora">Protectora</option>
+                </select>
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Escriba su e-mail" name="usemail" required>
+                <br>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" placeholder="Escriba su contraseña" name="uspass"required>
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="number" placeholder="Escriba su número de teléfono" name="ustelf">
+                <br>
+                <label for="direccion">Dirección:</label>
+                <textarea name="uadress" placeholder="Escriba su dirección" required></textarea>
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Registrarse" class="b-normal1">
+        </form>
+    </main>
+    <footer class="pie sec">
+        <p class="cp">Copyright: Laura Álvarez Muñoz - 2021 - Proyecto CESUR</p>
+    </footer>
+    <script src="src/js/app2.js"></script>
+</body>
+</html>

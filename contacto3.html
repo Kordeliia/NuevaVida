@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Vida</title>
+    <link rel="stylesheet" href="src/css/estilo.css">
+</head>
+<body>
+    
+    <header class="cabecera init">
+        <div class="con ccabecera">
+            <div class="bar">
+                <div class="tlf-responsive">
+                    <img src="build/img/barras.svg" alt="icono menu responsive">
+                </div>
+                <div class="dcha">
+                    <img class="iconodm" src="build/img/logo.png">
+                    <nav class="nav">
+                        <a href="index.php">Inicio</a>
+                        <a href="quienessomos.html">QuienesSomos</a>
+                        <a href="adoptame_nauth.php">Adóptame</a>
+                        <a href="protectoras.php">Protectoras</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="referencias.html">Referencias</a>
+                    </nav>
+                </div>
+            </div>
+            <h1>Nueva Vida ¡te piden una segunda oportunidad!</h1>
+            <p class="logregistro"><a href="registro.php">Regístrate</a> / <a href="login.html">Loguéate</a></p>
+        </div>
+    </header>
+
+    <main class="con sec">
+        <h2>Puede ponerse en contacto con nosotros cuando lo estime conveniente</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Información usuario personal</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Escriba su nombre" id="nombre">
+
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Escriba su e-mail" id="email">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información adopción</legend>
+
+                <label for="opciones">Dar en adopción o adoptar:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Compra">Dar en adopción</option>
+                    <option value="Vende">Adoptar</option>
+                </select>
+                <label for="opciones">Gato o Perro:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Compra">Gato</option>
+                    <option value="Vende">Perro</option>
+                </select>
+                <label for="opciones">Macho o hembra:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="Compra">Macho</option>
+                    <option value="Vende">Hemabra</option>
+                </select>
+
+                <label for="idanimal">ID animal:</label>
+                <input type="number" placeholder="Introduzca la ID del animal que aparecerá en su ficha" id="idanimal">
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar" class="b-normal1">
+        </form>
+    </main>
+
+    <footer class="pie sec">
+        <p class="cp">Copyright: Laura Álvarez Muñoz - 2021 - Proyecto CESUR</p>
+    </footer>
+    <script src="src/js/app2.js"></script>
+</body>
+</html>

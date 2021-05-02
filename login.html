@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Vida</title>
+    <link rel="stylesheet" href="src/css/estilo.css">
+</head>
+<body>
+    
+    <header class="cabecera init">
+        <div class="con ccabecera">
+            <div class="bar">
+                <div class="tlf-responsive">
+                    <img src="build/img/barras.svg" alt="icono menu responsive">
+                </div>
+                <div class="dcha">
+                    <img class="iconodm" src="build/img/logo.png">
+                    <nav class="nav">
+                        <a href="index.php">Inicio</a>
+                        <a href="quienessomos.html">QuienesSomos</a>
+                        <a href="adoptame.html">Adóptame</a>
+                        <a href="protectoras.html">Protectoras</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="referencias.html">Referencias</a>
+                    </nav>
+                </div>
+            </div>
+            <h1>Nueva Vida ¡te piden una segunda oportunidad!</h1>
+            <p class="logregistro"><a href="registro.html">Regístrate</a> / <a href="login.html">Loguéate</a></p>
+        </div>
+    </header>
+
+    <main class="con sec">
+        <h2>¡Loguéate!</h2>
+        <form class="formulario" name="formulario" method="post" action="login.php">
+            <fieldset>
+                <legend>Loguéese en el sistema</legend>
+
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Escriba su e-mail" name="usemail" required>
+                <br>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" placeholder="Escriba su contraseña" name="uspass" required>
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Logueo" class="b-normal1">
+        </form>
+    </main>
+
+    <footer class="pie sec">
+        <p class="cp">Copyright: Laura Álvarez Muñoz - 2021 - Proyecto CESUR</p>
+    </footer>
+    <script src="src/js/app2.js"></script>
+</body>
+</html>

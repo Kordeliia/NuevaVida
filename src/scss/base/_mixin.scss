@@ -1,0 +1,23 @@
+/** Media Queries **/
+@mixin tlf {
+    @media (min-width: #{$tlf}) {
+        @content;
+    }
+}
+
+@mixin tbt {
+    @media (min-width: #{$tbt}) {
+        @content;
+    }
+}
+  
+@mixin dsktp {
+    @media (min-width: #{$dsktp}) {
+        @content;
+    }
+}
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
